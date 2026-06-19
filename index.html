@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DesiTeraBox – Stream Desi Videos Online Free</title>
+  <meta name="description" content="DesiTeraBox – Watch and stream the latest desi videos online for free. HD quality, fast streaming, no signup required." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://desiterabox.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="DesiTeraBox – Stream Desi Videos Online Free" />
+  <meta property="og:description" content="Watch the latest desi videos in HD quality for free on DesiTeraBox." />
+  <meta property="og:url" content="https://desiterabox.com/" />
+  <meta property="og:site_name" content="DesiTeraBox" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="DesiTeraBox" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:      #07070d;
+      --card:    #10101c;
+      --glass:   rgba(10,10,20,0.93);
+      --border:  rgba(255,255,255,0.07);
+      --accent:  #e63b5e;
+      --warm:    #ff6b35;
+      --glow:    rgba(230,59,94,0.28);
+      --hi:      #f2f2fa;
+      --mid:     #9090b0;
+      --lo:      #50506a;
+      --r:       12px;
+      --pill:    999px;
+      --fd:      'Outfit', sans-serif;
+      --fb:      'Inter', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--hi); font-family: var(--fb); overflow-x: hidden; }
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+    button { cursor: pointer; border: none; background: none; font: inherit; }
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: #2a2a44; border-radius: 3px; }
+
+    /* TOP AD */
+    #ad-top {
+      width: 100%; background: #0b0b18;
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      min-height: 56px; padding: 6px 16px; gap: 10px;
+    }
+    .ad-lbl { font-size: 9px; color: var(--lo); text-transform: uppercase; letter-spacing: 1.2px; flex-shrink: 0; }
+    .ad-slot {
+      flex: 1; max-width: 728px; min-height: 50px;
+      background: rgba(255,255,255,0.02);
+      border: 1px dashed rgba(255,255,255,0.06); border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; color: var(--lo);
+    }
+
+    /* NAV */
+    #nav {
+      position: sticky; top: 0; z-index: 100; height: 60px;
+      background: var(--glass);
+      backdrop-filter: blur(22px) saturate(180%);
+      -webkit-backdrop-filter: blur(22px) saturate(180%);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center;
+      padding: 0 20px; gap: 12px;
+    }
+    .logo { display: flex; align-items: center; gap: 9px; flex-shrink: 0; }
+    .logo-icon {
+      width: 34px; height: 34px; border-radius: 9px;
+      background: linear-gradient(135deg, var(--accent), var(--warm));
+      display: flex; align-items: center; justify-content: center; font-size: 17px;
+    }
+    .logo-name {
+      font-family: var(--fd); font-size: 21px; font-weight: 900;
+      background: linear-gradient(90deg, #fff 25%, var(--accent));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .logo-name b { -webkit-text-fill-color: var(--accent); }
+    .nav-end { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+    .btn-accent {
+      padding: 8px 18px; border-radius: var(--pill);
+      font-size: 13px; font-weight: 600;
+      background: var(--accent); color: #fff;
+      box-shadow: 0 4px 16px var(--glow);
+      transition: background .2s, transform .2s;
+    }
+    .btn-accent:hover { background: #d0324f; transform: translateY(-1px); }
+
+    /* HERO */
+    #hero {
+      padding: 52px 20px 20px; text-align: center;
+      background: radial-gradient(ellipse 70% 55% at 50% 0%, rgba(230,59,94,.1) 0%, transparent 68%);
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11px; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase;
+      color: var(--accent);
+      background: rgba(230,59,94,.08); border: 1px solid rgba(230,59,94,.2);
+      padding: 5px 14px; border-radius: var(--pill); margin-bottom: 16px;
+    }
+    h1 {
+      font-family: var(--fd);
+      font-size: clamp(32px, 6vw, 64px); font-weight: 900; line-height: 1.06;
+      letter-spacing: -1px; margin-bottom: 12px;
+    }
+    h1 em {
+      font-style: normal;
+      background: linear-gradient(90deg, var(--accent), var(--warm));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .hero-sub { font-size: 15px; color: var(--mid); max-width: 440px; margin: 0 auto; }
+
+    /* SECTION HEADER */
+    #sec-head {
+      padding: 24px 20px 0;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .sec-title { font-family: var(--fd); font-size: 20px; font-weight: 800; }
+    .page-info { font-size: 12px; color: var(--lo); background: rgba(255,255,255,.04); padding: 3px 10px; border-radius: var(--pill); }
+
+    /* GRID */
+    #grid {
+      padding: 16px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+      gap: 14px;
+    }
+
+    /* CARD */
+    .vcard {
+      background: var(--card); border-radius: var(--r);
+      overflow: hidden; border: 1px solid var(--border);
+      cursor: pointer; position: relative;
+      transition: transform .22s cubic-bezier(.25,.46,.45,.94), box-shadow .22s, border-color .22s;
+    }
+    .vcard:hover {
+      transform: translateY(-5px) scale(1.012);
+      box-shadow: 0 10px 40px rgba(0,0,0,.65);
+      border-color: rgba(230,59,94,.38);
+    }
+    .vcard:active { transform: translateY(-2px) scale(.997); }
+
+    /* thumb — full image, no crop */
+    .vthumb {
+      position: relative; overflow: hidden;
+      background: #0d0d1e;
+      /* No fixed aspect-ratio: image defines its own height */
+    }
+    .vthumb img {
+      width: 100%; height: auto; display: block;
+      transition: transform .36s ease, filter .28s;
+      filter: brightness(.9);
+    }
+    .vcard:hover .vthumb img { transform: scale(1.05); filter: brightness(1.04); }
+
+    /* play overlay */
+    .vplay {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(0,0,0,0); transition: background .24s;
+    }
+    .vcard:hover .vplay { background: rgba(0,0,0,.35); }
+    .play-btn {
+      width: 50px; height: 50px; border-radius: 50%;
+      background: rgba(230,59,94,.92);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; transform: scale(.72);
+      transition: opacity .24s, transform .24s;
+      box-shadow: 0 6px 28px rgba(230,59,94,.55);
+    }
+    .vcard:hover .play-btn { opacity: 1; transform: scale(1); }
+    .play-btn svg { margin-left: 3px; }
+
+    /* hot badge */
+    .hot-badge {
+      position: absolute; top: 0; right: 0;
+      background: linear-gradient(135deg, var(--accent), var(--warm));
+      color: #fff; font-size: 9px; font-weight: 800; letter-spacing: .4px;
+      padding: 3px 9px; border-radius: 0 var(--r) 0 7px; text-transform: uppercase;
+    }
+
+    /* quick actions */
+    .qact {
+      position: absolute; top: 7px; right: 7px;
+      display: flex; flex-direction: column; gap: 5px;
+      opacity: 0; transform: translateX(6px);
+      transition: opacity .22s, transform .22s;
+    }
+    .vcard:hover .qact { opacity: 1; transform: translateX(0); }
+    .qbtn {
+      width: 28px; height: 28px; border-radius: 7px;
+      background: rgba(0,0,0,.78); backdrop-filter: blur(8px);
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; transition: background .2s;
+    }
+    .qbtn:hover { background: var(--accent); }
+
+    /* card body */
+    .vbody { padding: 10px 12px 12px; }
+    .vtitle {
+      font-size: 13px; font-weight: 600; line-height: 1.45; color: var(--hi);
+      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+      transition: color .2s;
+    }
+    .vcard:hover .vtitle { color: #fff; }
+
+    /* AD MID-FEED */
+    .ad-mid {
+      grid-column: 1/-1;
+      background: rgba(255,255,255,.02);
+      border: 1px dashed rgba(255,255,255,.05);
+      border-radius: 10px; min-height: 90px;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+    }
+
+    /* SKELETON */
+    .skel { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; }
+    .skel-thumb {
+      width: 100%; padding-top: 56.25%;
+      background: linear-gradient(90deg,#181828 25%,#22223a 50%,#181828 75%);
+      background-size: 200% 100%; animation: shim 1.6s infinite;
+    }
+    .skel-body { padding: 10px 12px 12px; display: flex; flex-direction: column; gap: 7px; }
+    .skel-ln {
+      height: 12px; border-radius: 4px;
+      background: linear-gradient(90deg,#1c1c2e 25%,#262640 50%,#1c1c2e 75%);
+      background-size: 200% 100%; animation: shim 1.6s infinite;
+    }
+    .skel-ln.s75 { width: 75%; }
+    .skel-ln.s50 { width: 50%; height: 10px; }
+    @keyframes shim { 0%{background-position:200% 0} 100%{background-position:-200% 0} }
+
+    /* PAGINATION */
+    #paginator {
+      padding: 24px 20px 36px;
+      display: flex; align-items: center; justify-content: center;
+      gap: 6px; flex-wrap: wrap;
+    }
+    .pg {
+      min-width: 40px; height: 40px; padding: 0 13px;
+      border-radius: 9px; font-size: 13px; font-weight: 600;
+      border: 1px solid var(--border); color: var(--mid);
+      background: rgba(255,255,255,.03);
+      display: flex; align-items: center; justify-content: center;
+      transition: all .18s;
+    }
+    .pg:hover:not(:disabled) { color: var(--hi); border-color: rgba(255,255,255,.2); background: rgba(255,255,255,.07); }
+    .pg.cur { background: var(--accent); color: #fff; border-color: var(--accent); box-shadow: 0 4px 16px var(--glow); }
+    .pg:disabled { opacity: .3; cursor: default; }
+    .pg-dots { color: var(--lo); display: flex; align-items: center; padding: 0 2px; font-size: 14px; }
+    #pg-spin {
+      display: none; width: 22px; height: 22px; border-radius: 50%;
+      border: 2.5px solid var(--border); border-top-color: var(--accent);
+      animation: spin .7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* STATES */
+    .state {
+      display: none; padding: 80px 20px; text-align: center;
+    }
+    .state-ico { font-size: 50px; margin-bottom: 14px; }
+    .state-ttl { font-family: var(--fd); font-size: 21px; font-weight: 800; margin-bottom: 7px; }
+    .state-sub { color: var(--mid); font-size: 14px; }
+    .retry {
+      display: inline-block; margin-top: 18px;
+      padding: 10px 28px; border-radius: var(--pill);
+      background: var(--accent); color: #fff; font-weight: 600; font-size: 14px;
+      box-shadow: 0 4px 14px var(--glow); transition: background .2s;
+    }
+    .retry:hover { background: #d0324f; }
+
+    /* TOAST */
+    #toast {
+      position: fixed; bottom: 80px; left: 50%;
+      transform: translateX(-50%) translateY(12px);
+      background: rgba(26,26,46,.97); color: #fff;
+      padding: 10px 20px; border-radius: var(--pill);
+      font-size: 13px; font-weight: 500;
+      border: 1px solid var(--border); backdrop-filter: blur(12px);
+      z-index: 999; opacity: 0; pointer-events: none;
+      transition: opacity .24s, transform .24s; white-space: nowrap;
+    }
+    #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    /* BOTTOM AD (mobile) */
+    #ad-bot {
+      display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 80;
+      background: var(--glass); backdrop-filter: blur(16px);
+      border-top: 1px solid var(--border);
+      padding: 6px 16px; min-height: 56px;
+      align-items: center; justify-content: center; gap: 10px;
+    }
+    #ad-bot .ad-slot { max-width: 320px; }
+
+    /* SHARE MODAL */
+    #modal-bg {
+      display: none; position: fixed; inset: 0; z-index: 200;
+      background: rgba(0,0,0,.78); backdrop-filter: blur(8px);
+      align-items: center; justify-content: center; padding: 20px;
+    }
+    #modal-bg.open { display: flex; }
+    .modal {
+      background: #12122a; border: 1px solid var(--border);
+      border-radius: 18px; padding: 26px;
+      width: 100%; max-width: 380px; position: relative;
+      animation: mIn .23s cubic-bezier(.25,.46,.45,.94);
+    }
+    @keyframes mIn { from { opacity: 0; transform: scale(.94) translateY(10px); } }
+    .modal-ttl { font-family: var(--fd); font-size: 18px; font-weight: 800; margin-bottom: 4px; }
+    .modal-sub { font-size: 12px; color: var(--mid); margin-bottom: 20px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .share-row { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+    .sbtn {
+      flex: 1; min-width: 100px; padding: 9px 12px; border-radius: 9px;
+      font-size: 13px; font-weight: 700;
+      display: flex; align-items: center; justify-content: center; gap: 7px;
+      transition: opacity .2s, transform .2s;
+    }
+    .sbtn:hover { opacity: .85; transform: translateY(-1px); }
+    .s-wa { background: #25D366; color: #fff; }
+    .s-tg { background: #2CA5E0; color: #fff; }
+    .s-tw { background: #1DA1F2; color: #fff; }
+    .copy-row { display: flex; gap: 8px; }
+    .copy-in {
+      flex: 1; background: rgba(255,255,255,.04);
+      border: 1px solid var(--border); border-radius: 8px;
+      padding: 9px 11px; color: var(--mid); font-size: 12px; outline: none;
+    }
+    .copy-btn {
+      padding: 9px 14px; border-radius: 8px;
+      background: var(--accent); color: #fff; font-size: 13px; font-weight: 700;
+      transition: background .2s;
+    }
+    .copy-btn:hover { background: #d0324f; }
+    .mclose { position: absolute; top: 13px; right: 15px; font-size: 20px; color: var(--mid); transition: color .2s; }
+    .mclose:hover { color: var(--hi); }
+
+    /* SCROLL TOP */
+    #stb {
+      position: fixed; bottom: 76px; right: 18px; z-index: 80;
+      width: 42px; height: 42px; border-radius: 50%;
+      background: var(--card); border: 1px solid var(--border);
+      color: var(--mid); font-size: 17px;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none;
+      transition: opacity .24s, background .2s;
+      box-shadow: 0 8px 32px rgba(0,0,0,.6);
+    }
+    #stb.vis { opacity: 1; pointer-events: auto; }
+    #stb:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+
+    /* FOOTER */
+    footer { padding: 44px 20px 80px; border-top: 1px solid var(--border); margin-top: 16px; }
+    .fg { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 36px; }
+    .fb-txt { font-size: 13px; color: var(--mid); margin-top: 10px; line-height: 1.7; max-width: 240px; }
+    .fsoc { display: flex; gap: 8px; margin-top: 13px; }
+    .fsoc a {
+      width: 34px; height: 34px; border-radius: 9px;
+      background: rgba(255,255,255,.05); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 15px; color: var(--mid); transition: all .2s;
+    }
+    .fsoc a:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .fh { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--lo); margin-bottom: 12px; }
+    .fl li { margin-bottom: 9px; }
+    .fl a { font-size: 13px; color: var(--mid); transition: color .2s; }
+    .fl a:hover { color: var(--hi); }
+    .fbot {
+      max-width: 1160px; margin: 26px auto 0;
+      padding-top: 18px; border-top: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 12px; flex-wrap: wrap; font-size: 12px; color: var(--lo);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      #grid { grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 10px; padding: 10px; }
+      .vtitle { font-size: 12px; }
+      h1 { font-size: clamp(26px, 8vw, 38px); }
+      .fg { grid-template-columns: 1fr 1fr; }
+      #ad-bot { display: flex; }
+      footer { padding-bottom: 100px; }
+      .pg { min-width: 36px; height: 36px; font-size: 12px; padding: 0 10px; }
+      #paginator { padding: 18px 12px 28px; gap: 4px; }
+    }
+    @media (max-width: 480px) {
+      #grid { grid-template-columns: repeat(2, 1fr); gap: 8px; padding: 8px; }
+      .fg { grid-template-columns: 1fr; }
+      #nav { padding: 0 12px; }
+    }
+    @media (min-width: 1200px) {
+      #grid { grid-template-columns: repeat(auto-fill, minmax(255px, 1fr)); }
+      #hero, #sec-head, #grid, #paginator, footer { max-width: 1380px; margin-left: auto; margin-right: auto; }
+      #nav { padding: 0 36px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- TOP AD -->
+<div id="ad-top">
+  <span class="ad-lbl">Ad</span>
+  <div class="ad-slot"><!-- HilltopAds Top Banner 728x90 --><span>Advertisement</span></div>
+</div>
+
+<!-- NAV -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a href="/" class="logo" aria-label="DesiTeraBox Home">
+    <div class="logo-icon">🎬</div>
+    <div class="logo-name">Desi<b>Tera</b>Box</div>
+  </a>
+  <div class="nav-end">
+    <button class="btn-accent" id="install-btn" style="display:none">📲 Install</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header id="hero" role="banner">
+  <div class="eyebrow">🔥 Free HD Streaming</div>
+  <h1>Watch Desi Videos<br><em>Without Limits</em></h1>
+  <p class="hero-sub">HD quality · Instant playback · No signup needed</p>
+</header>
+
+<!-- SECTION HEAD -->
+<div id="sec-head">
+  <span class="sec-title">Latest Videos</span>
+  <span class="page-info" id="page-info">Page 1</span>
+</div>
+
+<!-- GRID -->
+<main id="grid" role="main" aria-label="Video listing"></main>
+
+<!-- EMPTY -->
+<div id="empty" class="state" role="status">
+  <div class="state-ico">🎭</div>
+  <div class="state-ttl">No videos found</div>
+  <div class="state-sub">This page might be empty.</div>
+</div>
+
+<!-- ERROR -->
+<div id="errbox" class="state" role="alert">
+  <div class="state-ico">😕</div>
+  <div class="state-ttl">Couldn't load videos</div>
+  <div class="state-sub">Check your connection and try again.</div>
+  <button class="retry" onclick="goPage(S.page)">Retry</button>
+</div>
+
+<!-- PAGINATOR -->
+<nav id="paginator" role="navigation" aria-label="Page navigation">
+  <div id="pg-spin" aria-label="Loading"></div>
+</nav>
+
+<!-- BOTTOM AD (mobile) -->
+<div id="ad-bot" aria-label="Advertisement">
+  <span class="ad-lbl">Ad</span>
+  <div class="ad-slot"><!-- HilltopAds Sticky Bottom --><span>Advertisement</span></div>
+</div>
+
+<!-- SCROLL TOP -->
+<button id="stb" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">↑</button>
+
+<!-- TOAST -->
+<div id="toast" role="status" aria-live="polite"></div>
+
+<!-- SHARE MODAL -->
+<div id="modal-bg" role="dialog" aria-modal="true" aria-label="Share video">
+  <div class="modal">
+    <button class="mclose" onclick="closeShare()" aria-label="Close">✕</button>
+    <div class="modal-ttl">Share this video</div>
+    <div class="modal-sub" id="m-title">—</div>
+    <div class="share-row">
+      <button class="sbtn s-wa" id="s-wa">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </button>
+      <button class="sbtn s-tg" id="s-tg">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.820 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        Telegram
+      </button>
+      <button class="sbtn s-tw" id="s-tw">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.259 5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        Twitter
+      </button>
+    </div>
+    <div class="copy-row">
+      <input type="text" class="copy-in" id="m-link" readonly />
+      <button class="copy-btn" onclick="copyLink()">Copy</button>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fg">
+    <div>
+      <a href="/" class="logo" style="display:inline-flex">
+        <div class="logo-icon">🎬</div>
+        <div class="logo-name">Desi<b>Tera</b>Box</div>
+      </a>
+      <p class="fb-txt">Your go-to destination for free desi video streaming. HD quality, instant playback, always free.</p>
+      <div class="fsoc">
+        <a href="#" aria-label="WhatsApp">📱</a>
+        <a href="#" aria-label="Telegram">✈️</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+      </div>
+    </div>
+    <div>
+      <div class="fh">Navigate</div>
+      <ul class="fl">
+        <li><a href="/">Home</a></li>
+        <li><a href="/?page=1">Latest</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="fh">Company</div>
+      <ul class="fl">
+        <li><a href="/about.html">About Us</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/privacy.html">Privacy Policy</a></li>
+        <li><a href="/terms.html">Terms</a></li>
+        <li><a href="/dmca.html">DMCA</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="fh">More</div>
+      <ul class="fl">
+        <li><a href="/sitemap.xml">Sitemap</a></li>
+        <li><a href="/robots.txt">Robots.txt</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fbot">
+    <span>© 2025 DesiTeraBox. All rights reserved.</span>
+    <span>Made with ❤️ for desi content lovers</span>
+  </div>
+</footer>
+
+<script>
+// ═══════════════════════════════
+// CONFIG
+// ═══════════════════════════════
+const API      = 'https://tera-links-backend.dailyweb577.workers.dev/video-links';
+const PLAYER   = 'https://www.tcloudplay.com/?url=';
+const AD_EVERY = 6;
+const MAX_PAGE = 999; // we'll cap dynamically
+
+const S = { page: 1, loading: false, maxPage: 999 };
+
+// ═══════════════════════════════
+// TITLE CLEANER
+// ═══════════════════════════════
+function cleanTitle(raw) {
+  let t = raw
+    .replace(/\.mp4|\.mov|\.avi|\.mkv|\.webm/gi, '')
+    .replace(/https?:\/\/\S+/g, '')
+    .replace(/By_@\S+_On_Telegram_?/gi, '')
+    .replace(/@[\w]+/g, '')
+    .replace(/TG-[\w\s]+/gi, '')
+    .replace(/Search Telgram.*$/i, '')
+    .replace(/\(\s*TG[^)]*\)/gi, '')
+    .replace(/\d{4}-\d{2}-\d{2}-\d{2}-\d{2}-\d{2}/g, '')
+    .replace(/[_]+/g, ' ')
+    .replace(/\s*\(\d+\)\s*/g, ' ')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+  if (!t || /^[\d\s.()[\]-]+$/.test(t) || t.length < 3) return 'Desi Video';
+  t = t.replace(/\b\w/g, c => c.toUpperCase());
+  return t.length > 60 ? t.slice(0, 57) + '…' : t;
+}
+
+// ═══════════════════════════════
+// FETCH & RENDER
+// ═══════════════════════════════
+async function goPage(page) {
+  if (S.loading) return;
+  S.loading = true;
+  S.page = page;
+
+  const grid   = document.getElementById('grid');
+  const empty  = document.getElementById('empty');
+  const errbox = document.getElementById('errbox');
+  const pgInfo = document.getElementById('page-info');
+
+  empty.style.display  = 'none';     
+  errbox.style.display = 'none';
+  renderSkeletons(grid);
+  document.getElementById('pg-spin').style.display = 'block';
+  pgInfo.textContent = `Page ${page}`;
+
+  // Update URL without reload
+  const url = new URL(location.href);
+  url.searchParams.set('page', page);
+  history.pushState(null, '', url);
+
+  try {
+    const res  = await fetch(`${API}?page=${page}`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const json = await res.json();
+    if (!json.success || !Array.isArray(json.data)) throw new Error('Bad API');
+
+    const videos = json.data;
+
+    // Detect last page
+    if (videos.length === 0) {
+      S.maxPage = page - 1;
+      S.page = S.maxPage;
+      grid.innerHTML = '';
+      empty.style.display = 'block';
+    } else {
+      if (videos.length < 20) S.maxPage = page; // last page
+      renderCards(grid, videos);
+    }
+
+    renderPaginator(page, S.maxPage);
+    // Scroll to top of grid
+    if (page > 1) document.getElementById('sec-head').scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  } catch (e) {
+    console.error(e);
+    grid.innerHTML = '';
+    errbox.style.display = 'block';
+    renderPaginator(page, S.maxPage);
+  } finally {
+    S.loading = false;
+    document.getElementById('pg-spin').style.display = 'none';
+  }
+}
+
+// ═══════════════════════════════
+// RENDER CARDS
+// ═══════════════════════════════
+function renderCards(grid, videos) {
+  grid.innerHTML = '';
+  videos.forEach((v, i) => {
+    if (i > 0 && i % AD_EVERY === 0) grid.appendChild(buildAdMid());
+    grid.appendChild(buildCard(v, i));
+  });
+  lazyLoad();
+}
+
+function buildCard(v, idx) {
+  const title     = cleanTitle(v.title);
+  const playerUrl = PLAYER + encodeURIComponent(v.link);
+  const slug      = slugify(title) + '-' + v.id;
+  const shareUrl  = `${location.origin}/video/${slug}`;
+  const isHot     = idx < 4;
+
+  const el = document.createElement('article');
+  el.className = 'vcard';
+  el.setAttribute('aria-label', title);
+
+  el.innerHTML = `
+    <div class="vthumb">
+      <img
+        data-src="${esc(v.thumbnail)}"
+        src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9'%3E%3C/svg%3E"
+        alt="${esc(title)}" loading="lazy"
+      />
+      <div class="vplay">
+        <div class="play-btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+        </div>
+      </div>
+      ${isHot ? '<span class="hot-badge">🔥 Hot</span>' : ''}
+      <div class="qact">
+        <button class="qbtn js-share" title="Share" aria-label="Share">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        </button>
+        <button class="qbtn js-copy" title="Copy link" aria-label="Copy link">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="vbody">
+      <h2 class="vtitle">${esc(title)}</h2>
+    </div>`;
+
+  const play = () => window.open(playerUrl, '_blank', 'noopener,noreferrer');
+  el.querySelector('.vthumb').addEventListener('click', play);
+  el.querySelector('.vbody').addEventListener('click', play);
+  el.querySelector('.js-share').addEventListener('click', e => { e.stopPropagation(); openShare(title, shareUrl); });
+  el.querySelector('.js-copy').addEventListener('click', e => { e.stopPropagation(); clip(shareUrl); toast('Link copied!'); });
+  return el;
+}
+
+function buildAdMid() {
+  const d = document.createElement('div');
+  d.className = 'ad-mid';
+  d.setAttribute('aria-label', 'Advertisement');
+  d.innerHTML = `<span class="ad-lbl">Ad</span>
+    <div style="flex:1;max-width:580px;min-height:88px;background:rgba(255,255,255,.015);border:1px dashed rgba(255,255,255,.05);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:11px;color:var(--lo)">
+      <!-- HilltopAds Mid-Feed 580x90 -->Advertisement
+    </div>`;
+  return d;
+}
+
+// ═══════════════════════════════
+// SKELETON
+// ═══════════════════════════════
+function renderSkeletons(grid, n = 20) {
+  grid.innerHTML = Array.from({length: n}, () => `
+    <div class="skel" aria-hidden="true">
+      <div class="skel-thumb"></div>
+      <div class="skel-body">
+        <div class="skel-ln"></div>
+        <div class="skel-ln s75"></div>
+        <div class="skel-ln s50"></div>
+      </div>
+    </div>`).join('');
+}
+
+// ═══════════════════════════════
+// PAGINATOR
+// ═══════════════════════════════
+function renderPaginator(cur, maxPg) {
+  const pager = document.getElementById('paginator');
+  const spin  = document.getElementById('pg-spin');
+  [...pager.children].forEach(c => { if (c !== spin) c.remove(); });
+
+  const frag = document.createDocumentFragment();
+
+  // Prev
+  frag.appendChild(mkBtn('← Prev', cur <= 1, () => goPage(cur - 1)));
+
+  // Page number window
+  const range = pageRange(cur, maxPg);
+  range.forEach(p => {
+    if (p === '…') {
+      const d = document.createElement('span');
+      d.className = 'pg-dots'; d.textContent = '…';
+      frag.appendChild(d);
+    } else {
+      const b = mkBtn(p, false, () => goPage(p));
+      if (p === cur) b.classList.add('cur');
+      frag.appendChild(b);
+    }
+  });
+
+  // Next
+  frag.appendChild(mkBtn('Next →', cur >= maxPg, () => goPage(cur + 1)));
+
+  pager.insertBefore(frag, spin);
+}
+
+function pageRange(cur, max) {
+  if (max <= 1) return [1];
+  // Always show: 1, 2, cur-1, cur, cur+1, max-1, max (deduplicated, bounded)
+  const set = new Set([1, 2, cur-1, cur, cur+1, max-1, max].filter(p => p >= 1 && p <= max));
+  const sorted = [...set].sort((a,b) => a-b);
+  const out = [];
+  for (let i = 0; i < sorted.length; i++) {
+    if (i > 0 && sorted[i] - sorted[i-1] > 1) out.push('…');
+    out.push(sorted[i]);
+  }
+  return out;
+}
+
+function mkBtn(label, disabled, onClick) {
+  const b = document.createElement('button');
+  b.className = 'pg';
+  b.textContent = label;
+  b.disabled = !!disabled;
+  if (!disabled) b.addEventListener('click', onClick);
+  return b;
+}
+
+// ═══════════════════════════════
+// LAZY IMAGES
+// ═══════════════════════════════
+let imgObs;
+function lazyLoad() {
+  if (!('IntersectionObserver' in window)) {
+    document.querySelectorAll('img[data-src]').forEach(i => { i.src = i.dataset.src; });
+    return;
+  }
+  if (!imgObs) {
+    imgObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const img = e.target;
+          img.src = img.dataset.src;
+          img.removeAttribute('data-src');
+          imgObs.unobserve(img);
+        }
+      });
+    }, { rootMargin: '240px' });
+  }
+  document.querySelectorAll('img[data-src]').forEach(i => imgObs.observe(i));
+}
+
+// ═══════════════════════════════
+// SHARE MODAL
+// ═══════════════════════════════
+function openShare(title, url) {
+  document.getElementById('m-title').textContent = title;
+  document.getElementById('m-link').value = url;
+  const e = encodeURIComponent;
+  const txt = `Watch "${title}" on DesiTeraBox: ${url}`;
+  document.getElementById('s-wa').onclick = () => window.open(`https://wa.me/?text=${e(txt)}`, '_blank');
+  document.getElementById('s-tg').onclick = () => window.open(`https://t.me/share/url?url=${e(url)}&text=${e(title)}`, '_blank');
+  document.getElementById('s-tw').onclick = () => window.open(`https://twitter.com/intent/tweet?text=${e(txt)}`, '_blank');
+  document.getElementById('modal-bg').classList.add('open');
+}
+function closeShare() { document.getElementById('modal-bg').classList.remove('open'); }
+document.getElementById('modal-bg').addEventListener('click', e => { if (e.target === document.getElementById('modal-bg')) closeShare(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeShare(); });
+function copyLink() { clip(document.getElementById('m-link').value); toast('Link copied!'); }
+
+// ═══════════════════════════════
+// HELPERS
+// ═══════════════════════════════
+function slugify(s) { return s.toLowerCase().replace(/[^a-z0-9\s-]/g,'').replace(/\s+/g,'-').replace(/-+/g,'-').slice(0,60); }
+function esc(s) { const d=document.createElement('div'); d.appendChild(document.createTextNode(String(s))); return d.innerHTML; }
+function clip(t) {
+  if (navigator.clipboard) navigator.clipboard.writeText(t).catch(()=>fbClip(t));
+  else fbClip(t);
+}
+function fbClip(t) {
+  const ta=document.createElement('textarea'); ta.value=t; ta.style.cssText='position:fixed;opacity:0;';
+  document.body.appendChild(ta); ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+}
+let toastT;
+function toast(msg) {
+  const el=document.getElementById('toast'); el.textContent=msg; el.classList.add('show');
+  clearTimeout(toastT); toastT=setTimeout(()=>el.classList.remove('show'),2200);
+}
+
+// SCROLL TOP
+window.addEventListener('scroll', () => document.getElementById('stb').classList.toggle('vis', scrollY > 550), {passive:true});
+
+// PWA
+let dPro;
+window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); dPro=e; document.getElementById('install-btn').style.display='block'; });
+document.getElementById('install-btn').addEventListener('click', async()=>{
+  if(!dPro)return; dPro.prompt(); const{outcome}=await dPro.userChoice;
+  if(outcome==='accepted')document.getElementById('install-btn').style.display='none'; dPro=null;
+});
+
+// SW
+if('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(()=>{});
+
+// INIT — read page from URL
+const initPage = parseInt(new URLSearchParams(location.search).get('page')) || 1;
+goPage(initPage);
+</script>
+</body>
+</html>
