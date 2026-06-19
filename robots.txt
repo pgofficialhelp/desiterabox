@@ -7,8 +7,8 @@ Disallow: /admin/
 Disallow: /private/
 
 # Sitemaps
-Sitemap: https://desiterabox.com/sitemap.xml
-Sitemap: https://desiterabox.com/sitemap-videos.xml
+Sitemap: https://desiterabox.online/sitemap.xml
+Sitemap: https://desiterabox.online/sitemap-videos.xml
 
 # Crawl delay (be polite to bots)
 Crawl-delay: 1
