@@ -11,6 +11,7 @@
   <meta property="og:title" content="DesiTeraBox – Stream Desi Videos Online Free" />
   <meta property="og:description" content="Watch the latest desi videos in HD quality for free on DesiTeraBox." />
   <meta property="og:url" content="https://desiterabox.online/" />
+  <meta property="og:image" content="https://desiterabox.online/og-image.jpg" />
   <meta property="og:site_name" content="DesiTeraBox" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="manifest" href="/manifest.json" />
@@ -359,42 +360,67 @@
     #stb:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
 
     /* FOOTER */
-    footer { padding: 44px 20px 80px; border-top: 1px solid var(--border); margin-top: 16px; }
-    .fg { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 36px; }
-    .fb-txt { font-size: 13px; color: var(--mid); margin-top: 10px; line-height: 1.7; max-width: 240px; }
-    .fsoc { display: flex; gap: 8px; margin-top: 13px; }
-    .fsoc a {
-      width: 34px; height: 34px; border-radius: 9px;
-      background: rgba(255,255,255,.05); border: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 15px; color: var(--mid); transition: all .2s;
+    footer {
+      background: #000;
+      border-top: 1px solid rgba(255,255,255,.08);
+      margin-top: 24px;
+      padding: 52px 24px 0;
     }
-    .fsoc a:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
-    .fh { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--lo); margin-bottom: 12px; }
-    .fl li { margin-bottom: 9px; }
-    .fl a { font-size: 13px; color: var(--mid); transition: color .2s; }
+    .fg {
+      max-width: 1160px; margin: 0 auto;
+      display: grid; grid-template-columns: 1.6fr 1fr 1.4fr 1fr;
+      gap: 40px;
+    }
+    .f-brand-logo { display: flex; align-items: center; gap: 9px; margin-bottom: 14px; }
+    .f-brand-logo .logo-icon { width: 30px; height: 30px; border-radius: 8px; font-size: 15px; }
+    .f-brand-logo .logo-name { font-size: 18px; }
+    .fb-txt { font-size: 13px; color: var(--mid); line-height: 1.75; max-width: 240px; }
+    .fh { font-size: 14px; font-weight: 600; color: var(--hi); margin-bottom: 16px; }
+    .fl li { margin-bottom: 11px; }
+    .fl a { font-size: 13.5px; color: var(--mid); transition: color .18s; }
     .fl a:hover { color: var(--hi); }
+    .fl a.f-icon-link { display: flex; align-items: center; gap: 8px; }
+    .f-icon {
+      width: 20px; height: 20px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; flex-shrink: 0;
+    }
+    .f-icon.tg  { background: #2CA5E0; }
+    .f-icon.bot { background: #444; }
+    .f-icon.wa  { background: #25D366; }
+    .f-disclaimer {
+      max-width: 1160px; margin: 40px auto 0;
+      background: rgba(255,165,0,.05);
+      border: 1px solid rgba(255,165,0,.15);
+      border-radius: 10px;
+      padding: 14px 18px;
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 12.5px; color: var(--mid); line-height: 1.65;
+    }
+    .f-disclaimer-icon { font-size: 15px; flex-shrink: 0; margin-top: 1px; }
+    .f-disclaimer b { color: #f5a623; font-weight: 700; }
     .fbot {
-      max-width: 1160px; margin: 26px auto 0;
-      padding-top: 18px; border-top: 1px solid var(--border);
+      max-width: 1160px; margin: 20px auto 0;
+      padding: 16px 0 24px;
+      border-top: 1px solid rgba(255,255,255,.06);
       display: flex; align-items: center; justify-content: space-between;
       gap: 12px; flex-wrap: wrap; font-size: 12px; color: var(--lo);
     }
+    @media (max-width: 900px) { .fg { grid-template-columns: 1fr 1fr; gap: 28px; } }
+    @media (max-width: 480px) { .fg { grid-template-columns: 1fr; gap: 24px; } footer { padding-top: 36px; } }
 
     /* RESPONSIVE */
     @media (max-width: 768px) {
       #grid { grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 10px; padding: 10px; }
       .vtitle { font-size: 12px; }
       h1 { font-size: clamp(26px, 8vw, 38px); }
-      .fg { grid-template-columns: 1fr 1fr; }
       #ad-bot { display: flex; }
-      footer { padding-bottom: 100px; }
+      .fbot { padding-bottom: 80px; }
       .pg { min-width: 36px; height: 36px; font-size: 12px; padding: 0 10px; }
       #paginator { padding: 18px 12px 28px; gap: 4px; }
     }
     @media (max-width: 480px) {
       #grid { grid-template-columns: repeat(2, 1fr); gap: 8px; padding: 8px; }
-      .fg { grid-template-columns: 1fr; }
       #nav { padding: 0 12px; }
     }
     @media (min-width: 1200px) {
@@ -501,43 +527,72 @@
 <!-- FOOTER -->
 <footer>
   <div class="fg">
+
+    <!-- Brand col -->
     <div>
-      <a href="/" class="logo" style="display:inline-flex">
+      <div class="f-brand-logo">
         <div class="logo-icon">🎬</div>
         <div class="logo-name">Desi<b>Tera</b>Box</div>
-      </a>
-      <p class="fb-txt">Your go-to destination for free desi video streaming. HD quality, instant playback, always free.</p>
-      <div class="fsoc">
-        <a href="#" aria-label="WhatsApp">📱</a>
-        <a href="#" aria-label="Telegram">✈️</a>
-        <a href="#" aria-label="Twitter">🐦</a>
       </div>
+      <p class="fb-txt">Access premium desi viral content fast, secure, and free. Stream directly from TeraBox links instantly.</p>
     </div>
+
+    <!-- Quick Links -->
     <div>
-      <div class="fh">Navigate</div>
+      <div class="fh">Quick Links</div>
       <ul class="fl">
         <li><a href="/">Home</a></li>
-        <li><a href="/?page=1">Latest</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="https://www.tcloudplay.com" target="_blank" rel="noopener" class="f-icon-link">
+          <span class="f-icon tg">▶</span> Watch on iTeraPlay
+        </a></li>
       </ul>
     </div>
+
+    <!-- Support & Legal -->
     <div>
-      <div class="fh">Company</div>
+      <div class="fh">Support &amp; Legal</div>
       <ul class="fl">
-        <li><a href="/about.html">About Us</a></li>
-        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/contact.html">Contact Us</a></li>
         <li><a href="/privacy.html">Privacy Policy</a></li>
-        <li><a href="/terms.html">Terms</a></li>
+        <li><a href="/terms.html">Terms of Service</a></li>
         <li><a href="/dmca.html">DMCA</a></li>
+        <li><a href="/removal.html">Content Removal</a></li>
       </ul>
     </div>
+
+    <!-- Community -->
     <div>
-      <div class="fh">More</div>
+      <div class="fh">Community</div>
       <ul class="fl">
-        <li><a href="/sitemap.xml">Sitemap</a></li>
-        <li><a href="/robots.txt">Robots.txt</a></li>
+        <li><a href="https://t.me/desiterabox" target="_blank" rel="noopener" class="f-icon-link">
+          <span class="f-icon tg">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="white"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </span>
+          Telegram Channel
+        </a></li>
+        <li><a href="https://t.me/desiteraboxbot" target="_blank" rel="noopener" class="f-icon-link">
+          <span class="f-icon bot">🤖</span>
+          Official Link Bot
+        </a></li>
+        <li><a href="https://wa.me/desiterabox" target="_blank" rel="noopener" class="f-icon-link">
+          <span class="f-icon wa">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a9 9 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 0C5.495 0 .157 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.459 3.48 11.815 11.815 0 0 0 12.05 0"/></svg>
+          </span>
+          WhatsApp Group
+        </a></li>
       </ul>
     </div>
+
   </div>
+
+  <!-- Disclaimer bar -->
+  <div class="f-disclaimer">
+    <span class="f-disclaimer-icon">⚠️</span>
+    <span><b>Disclaimer:</b> DesiTeraBox is a tool to browse publicly shared TeraBox links. We do not host or store any video files on our servers — all content is indexed directly from third-party publicly shared sources. Please use the service responsibly.</span>
+  </div>
+
+  <!-- Bottom bar -->
   <div class="fbot">
     <span>© 2025 DesiTeraBox. All rights reserved.</span>
     <span>Made with ❤️ for desi content lovers</span>
@@ -651,7 +706,7 @@ function buildCard(v, idx) {
   const title     = cleanTitle(v.title);
   const playerUrl = PLAYER + encodeURIComponent(v.link);
   const slug      = slugify(title) + '-' + v.id;
-  const shareUrl  = `${location.origin}/video/${slug}`;
+  const shareUrl  = `https://desiterabox.online/video/${slug}`;
   const isHot     = idx < 4;
 
   const el = document.createElement('article');
