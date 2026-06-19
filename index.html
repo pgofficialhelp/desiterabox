@@ -433,24 +433,7 @@
 </head>
 <body>
 
-<!-- TOP AD -->
-<div id="ad-top">
-  <span class="ad-lbl">Ad</span>
-  <div class="ad-slot">
-    <script>
-    (function(poafw){
-    var d = document,
-        s = d.createElement('script'),
-        l = d.scripts[d.scripts.length - 1];
-    s.settings = poafw || {};
-    s.src = "\/\/edible-bother.com\/cLDW9.6HbS2F5LlJS\/WJQO9XN-zWE-1vM\/D\/c\/0fMBSP0Z3_MjThUCwPN\/zCQZ1W";
-    s.async = true;
-    s.referrerPolicy = 'no-referrer-when-downgrade';
-    l.parentNode.insertBefore(s, l);
-    })({})
-    </script>
-  </div>
-</div>
+
 
 <!-- NAV -->
 <nav id="nav" role="navigation" aria-label="Main navigation">
@@ -499,11 +482,7 @@
   <div id="pg-spin" aria-label="Loading"></div>
 </nav>
 
-<!-- BOTTOM AD (mobile) -->
-<div id="ad-bot" aria-label="Advertisement">
-  <span class="ad-lbl">Ad</span>
-  <div class="ad-slot"><!-- HilltopAds Sticky Bottom --><span>Advertisement</span></div>
-</div>
+
 
 <!-- SCROLL TOP -->
 <button id="stb" onclick="scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">↑</button>
@@ -710,14 +689,12 @@ async function goPage(page) {
 function renderCards(grid, videos) {
   grid.innerHTML = '';
   videos.forEach((v, i) => {
-    if (i > 0 && i % AD_EVERY === 0) grid.appendChild(buildAdMid());
     grid.appendChild(buildCard(v, i));
   });
   lazyLoad();
 }
 
 function buildCard(v, idx) {
-  const title     = cleanTitle(v.title);
   const playerUrl = PLAYER + encodeURIComponent(v.link);
   const slug      = slugify(title) + '-' + v.id;
   const shareUrl  = `https://desiterabox.online/video/${slug}`;
