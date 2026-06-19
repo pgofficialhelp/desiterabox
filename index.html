@@ -598,10 +598,8 @@
 // ═══════════════════════════════
 const API      = 'https://tera-links-backend.dailyweb577.workers.dev/video-links';
 const PLAYER   = 'https://www.tcloudplay.com/?url=';
-const AD_EVERY = 6;
-const MAX_PAGE = 999; // we'll cap dynamically
 
-const S = { page: 1, loading: false, maxPage: 999 };
+const S = { page: 1, loading: false, maxPage: 1 };
 
 // ═══════════════════════════════
 // TITLE CLEANER
@@ -650,26 +648,36 @@ async function goPage(page) {
   history.pushState(null, '', url);
 
   try {
-    const res  = await fetch(`${API}?page=${page}`);
+    const res  = await fetch(`${API}?page=${page}`, {
+      method: 'GET',
+      mode: 'cors',
+      cache: 'no-cache',
+      headers: { 'Accept': 'application/json' }
+    });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const json = await res.json();
     if (!json.success || !Array.isArray(json.data)) throw new Error('Bad API');
 
     const videos = json.data;
 
-    // Detect last page
     if (videos.length === 0) {
+      // Went past last page — step back
       S.maxPage = page - 1;
       S.page = S.maxPage;
-      grid.innerHTML = '';
-      empty.style.display = 'block';
-    } else {
-      if (videos.length < 20) S.maxPage = page; // last page
-      renderCards(grid, videos);
+      goPage(S.maxPage);
+      return;
     }
 
+    // If we got a full page, there may be more — expand maxPage
+    if (videos.length >= 20) {
+      if (page >= S.maxPage) S.maxPage = page + 1;
+    } else {
+      // Partial page = definite last page
+      S.maxPage = page;
+    }
+
+    renderCards(grid, videos);
     renderPaginator(page, S.maxPage);
-    // Scroll to top of grid
     if (page > 1) document.getElementById('sec-head').scrollIntoView({ behavior: 'smooth', block: 'start' });
 
   } catch (e) {
@@ -695,6 +703,7 @@ function renderCards(grid, videos) {
 }
 
 function buildCard(v, idx) {
+  const title     = cleanTitle(v.title);
   const playerUrl = PLAYER + encodeURIComponent(v.link);
   const slug      = slugify(title) + '-' + v.id;
   const shareUrl  = `https://desiterabox.online/video/${slug}`;
